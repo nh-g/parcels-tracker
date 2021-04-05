@@ -1,18 +1,18 @@
 import React, {useEffect, useState} from 'react';
-import FetchData from '../FetchData';
-import axios from 'axios';
+import { useRecoilState } from "recoil";
 
+import FetchData from '../FetchData';
 import ParcelItem from './ParcelItem';
+import { parcelState } from '../state/parcelState';
 
 export default function ParcelList() {
-    const [parcels, setParcels] = useState([]);
+    const [parcels, setParcels] = useRecoilState(parcelState);
     const [load, setLoad] = useState(false);
     const [error, setError] = useState('');
 
     const ParcelsArray = parcels.map((item) => 
     <ParcelItem key={item.id} parcel ={item}/>
     )
-   
     useEffect(() => {
         FetchData('https://my.api.mockaroo.com/orders.json?key=e49e6840')
           .then(res => {
@@ -31,7 +31,7 @@ export default function ParcelList() {
         <ul>
           {error ? (
           <li>{error.message}</li>
-           ) : ParcelsArray
+           ) : ParcelsArray 
           }
         </ul>
       );

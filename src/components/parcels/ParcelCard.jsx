@@ -4,7 +4,7 @@ import Date from "../Date"
 
 export default function ParcelCard({ parcel }) {
   return (
-    <div className="parcel detail">
+    <div className="parcel-details">
       <StatusIcon orderStatus={parcel.status} />
       <p className="data-label">Sender</p>
       <p className="data-content">{parcel.sender}</p>
