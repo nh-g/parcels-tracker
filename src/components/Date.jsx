@@ -3,7 +3,7 @@ export default function Date({dateString}){
     const time = dateString.split("T")[1].split("Z");
 
     return (
-        <p className="eta">
+        <p className="data-content">
             ETA: {date} at {time}
         </p>
     )
