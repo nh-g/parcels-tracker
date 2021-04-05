@@ -9,7 +9,7 @@ export default function StatusIcon({ orderStatus }) {
   return (
     <div className="StatusIcon">
       {orderStatus === "order-info-received" && (
-        <FontAwesomeIcon icon={faRocket} color="rgba(34, 167, 240, 1)" />
+        <FontAwesomeIcon icon={faRocket} color="rgba(34, 167, 240, 1)"/>
       )}
       {orderStatus === "on-the-way" && (
         <FontAwesomeIcon icon={faShippingFast} color="rgba(34, 167, 240, 1)" />

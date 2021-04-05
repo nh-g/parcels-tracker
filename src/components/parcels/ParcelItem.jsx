@@ -1,8 +1,9 @@
 import {Link, NavLink} from "react-router-dom";
-import ParcelList from "./ParcelList";
 
+import ParcelList from "./ParcelList";
 import StatusIcon from "./StatusIcon";
 import StatusOnText from "./StatusOnText";
+import Date from "../Date"
 
 export default function ParcelItem({parcel}) {
   return (
@@ -14,7 +15,7 @@ export default function ParcelItem({parcel}) {
         <div className="right">
           <h2>{parcel.sender}</h2>
           <StatusOnText orderStatus={parcel.status}/> 
-          <p>ETA: {parcel.eta}</p>
+          <Date dateString={parcel.eta}/>
         </div>
       </div>
     </NavLink>
