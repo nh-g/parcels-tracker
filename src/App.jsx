@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Container } from "semantic-ui-react";
 import { RecoilRoot } from "recoil";
 
+import Header from './components/Header';
 import Home from './pages/Home';
 import SearchResult from './pages/SearchResult';
 // import Parcel from './pages/Parcel'
@@ -12,7 +13,7 @@ return (
     <Router>
       <div className="App">
         <RecoilRoot>
-          {/* <Header /> */}
+          <Header />
           <Switch>
             <Route component={Home} path="/" exact />
             <Route path="/search_results/:query" component={SearchResult} />
