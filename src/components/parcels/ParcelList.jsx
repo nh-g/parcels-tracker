@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import FetchData from '../FetchData'
+import FetchData from '../FetchData';
 import axios from 'axios';
 
 import ParcelItem from './ParcelItem';
@@ -8,7 +8,7 @@ export default function ParcelList() {
     const [parcels, setParcels] = useState([]);
     const [load, setLoad] = useState(false);
     const [error, setError] = useState('');
-    
+
     const ParcelsArray = parcels.map((item) => 
     <ParcelItem key={item.id} parcel ={item}/>
     )
@@ -27,21 +27,16 @@ export default function ParcelList() {
     
 
     if (load) {
-        return (
-          <ul>
-            {error ? (
-              <li>{error.message}</li>
-            ) : (
-              <ParcelsArray />
-            )}
-          </ul>
-        );
+      return (
+        <ul>
+          {error ? (
+          <li>{error.message}</li>
+           ) : ParcelsArray
+          }
+        </ul>
+      );
     } else {
-        return (
-            <div>
-                Loading...
-            </div>
-        );
+      return <div>Loading...</div>;
     }
 };
 

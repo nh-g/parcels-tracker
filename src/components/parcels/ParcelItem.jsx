@@ -1,4 +1,5 @@
 import {Link, NavLink} from "react-router-dom";
+import ParcelList from "./ParcelList";
 
 import StatusIcon from "./StatusIcon";
 import StatusOnText from "./StatusOnText";
@@ -11,7 +12,9 @@ export default function ParcelItem({parcel}) {
           <StatusIcon orderStatus={parcel.status} />
         </div>
         <div className="right">
-          <StatusOnText orderStatus={parcel.status} />
+          <h2>{parcel.sender}</h2>
+          <StatusOnText orderStatus={parcel.status}/> 
+          <p>ETA: {parcel.eta}</p>
         </div>
       </div>
     </NavLink>
