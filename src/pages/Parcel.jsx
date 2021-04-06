@@ -15,7 +15,14 @@ export default function Parcel({ match }) {
   const matchedParcel = parcels.find((item) => item.parcel_id === routerID);
 
   if (!matchedParcel) {
-    return <div>Not Found</div>;
+    return (
+      <div>
+        <br />
+        <h2>    Not Found. 
+          <br/>
+          ⬅ Browser back to the list of all parcels.</h2>
+      </div>
+    );
   }
   return (
     <div id="parcel" className="container">
