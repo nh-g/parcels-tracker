@@ -1,8 +1,8 @@
 .parcel-grid {
   display: grid;
   grid-row-gap: var(--space-x-big);
-  text-decoration: none;
   margin-right: 30px;
+  margin-bottom: 70px;
 }
 
 .parcel-item {
@@ -21,6 +21,8 @@
   box-sizing: border-box;
   text-align: start;
   color: var(--color-blue);
+    text-decoration: none;
+
 }
 
 .box h2 {

@@ -6,7 +6,7 @@ import Date from "../Date"
 
 export default function ParcelItem({parcel}) {
   return (
-    <Link to={`/parcel/${parcel.parcel_id}`}>
+    <Link to={`/parcel/${parcel.parcel_id}` }>
       <div className="parcel-item">
         <div className="box">
           <StatusIcon orderStatus={parcel.status} />
