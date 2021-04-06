@@ -19,13 +19,17 @@ export default function Parcel({ match }) {
   }
   return (
     <div id="parcel" className="container">
+      <div className="back-to-list">
+        <Link to="/"> ＜</Link>
+      </div>
       <div className="parcel-details">
         <ParcelCard key={matchedParcel.id} parcel={matchedParcel} />
       </div>
-      <br/>
+      <br />
       <Link className="back-to-list" to="/">
         ⬅ Back to all parcels
       </Link>
+      <br />
     </div>
   );
 }

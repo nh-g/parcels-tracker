@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 export default function SearchBar() {
   // Local state
   const [query, setQuery] = useState("");
+    const [menuActive, setMenuActive] = useState(false)
 
   // Constants
   const history = useHistory();
@@ -21,34 +22,25 @@ export default function SearchBar() {
 
   return (
     <div>
-      <div className="back-to-list">
-        <Link to="/"> ＜
-      </Link>
-      </div>
-
-      <form onSubmit={search} className="SearchBar">
-        {/* <label
-          htmlFor="sender-search"
-          className="search-label"
-          id="search-label"
+      <form onSubmit={search} className="search-bar">
+        {/* <div className="search-input"> */}
+        {/* <a
+          className="header-icon"
+          href="#sender-search"
+          onClick={() => setMenuActive(!menuActive)}
         >
-          Search parcels by sender
-        </label> */}
-        <div className="search-input">
-          <span>
-            <FontAwesomeIcon icon={faSearch} />
-            　
-          </span>
-          <input
-            type="text"
-            id="sender-search"
-            placeholder="Enter name of sender then hit Enter"
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-            className="search-box"
-          />
-          {/* <input type="submit" value="Search" className="search-button" /> */}
-        </div>
+          <FontAwesomeIcon icon={faSearch} /> 　
+        </a> */}
+        <input
+          type="text"
+          id="sender-search"
+          placeholder="🔍   Put name of sender then hit Enter"
+          value={query}
+          onChange={(event) => setQuery(event.target.value)}
+          className="search-box"
+        />
+        {/* <input type="submit" value="Search" className="search-button" /> */}
+        {/* </div> */}
       </form>
     </div>
   );

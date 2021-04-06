@@ -1,0 +1,42 @@
+.header {
+    text-decoration: none;
+    margin: 20px 40px;
+    // background-color: white;
+    height: 100px;
+
+    .header-icon {
+        font-size: var(--font-size-big);
+        color: var(--color-black);
+        font-weight: 50px;
+    }
+
+}
+
+.search-bar {
+    text-align: end;
+    padding-top: 15px;
+}
+
+.search-box {
+    font-size: var(--font-size-medium);
+    text-align: center;
+    width: 40%;
+    height: 40px;
+    border: .1px solid rgba(139, 139, 139, 0.25);
+    box-shadow: inset 0px 2px 2px rgba(139, 139, 139, 0.25);
+}
+
+@media screen and (max-width:767px) {
+    .search-bar {
+        text-align: center;
+
+        .search-box {
+            width: 100%;
+        }
+
+        .header-icon{
+            display: none;
+        }
+    }
+
+}

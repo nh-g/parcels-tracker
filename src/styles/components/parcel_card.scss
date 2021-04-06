@@ -21,24 +21,18 @@
     font-size: var(--font-size-medium);
     margin-bottom: 0px;
     color: var(--color-black);
-    letter-spacing: 1px;
 }
 
 .data-content {
     font-size: var(--font-size-medium);
-    font-weight: 700;
+    font-weight: 550;
     margin-top: var(--space-small);
     margin-bottom: var(--space-big);
-    color: var(--color-blue);
+    color: var(--color-black);
     letter-spacing: 1.3px;
 
 }
 
-.OrderDetailed .status {
-    font-size: var(--font-size-medium);
-    font-weight: 700;
-    margin-top: var(--space-small);
-    margin-bottom: var(--space-big);
-}
-
-/* TODO Account for some data being wrapped in divs, eg status */
+// .back-to-list {
+//     padding-bottom: 50px;
+// }
