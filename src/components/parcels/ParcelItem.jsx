@@ -1,6 +1,5 @@
 import {Link} from "react-router-dom";
 
-import ParcelList from "./ParcelList";
 import StatusIcon from "./StatusIcon";
 import StatusOnText from "./StatusOnText";
 import Date from "../Date"
