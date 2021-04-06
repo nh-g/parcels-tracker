@@ -25,7 +25,8 @@ You will also see any lint errors in the console.
 ## Consideration for further scale
 
 Due to 5 hour time limit requirement of the assignment, there are several user experience steps was considered to be skipped(.i.e login authentication).<br/>
-The style is thus kept very simple and minimalism so that the design can be easily adapted if being added to other projects.
+
+The style is thus kept very simple and minimalism so that the design can be easily adapted if being added to other projects. Considering the dominant usage as an app on small devices (mobile phone, tablet), the design was chosen to small screen responsively driven.
 
 In the future, I plan to add some functions like:
 <li> view interactive map of parcels; using React Google Map API</li>
