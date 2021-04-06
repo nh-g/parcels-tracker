@@ -7,7 +7,7 @@ import {
   fireEvent,
   screen,
 } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
+import { MemoryRouter } from "react-router-dom"; //a Router that keeps the history of URL in memory, does not read or write to the address bar
 
 import Parcel from "./Parcel";
 import { parcelState } from "../state/parcelState";
