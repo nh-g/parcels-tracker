@@ -27,6 +27,9 @@
 }
 
 @media screen and (max-width:767px) {
+    .header {
+        height: 50px;
+    }
     .search-bar {
         text-align: center;
 
