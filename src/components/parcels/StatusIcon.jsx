@@ -7,7 +7,7 @@ import { faCheckCircle,
 
 export default function StatusIcon({ orderStatus }) {
   return (
-    <div className="StatusIcon">
+    <div className="status-icon">
       {orderStatus === "order-info-received" && (
         <FontAwesomeIcon icon={faRocket} color="rgba(34, 167, 240, 1)"/>
       )}
