@@ -1,6 +1,6 @@
-import StatusIcon from "./StatusIcon"
-import StatusOnText from "./StatusOnText"
-import Date from "../Date"
+import StatusIcon from "./StatusIcon";
+import StatusOnText from "./StatusOnText";
+import Date from "../Date";
 
 export default function ParcelCard({ parcel }) {
   return (
@@ -12,9 +12,9 @@ export default function ParcelCard({ parcel }) {
         <p className="data-label">Sender</p>
         <p className="data-content">{parcel.sender}</p>
         <p className="data-label">Status</p>
-        <p className="data-content">
+        <div className="data-content">
           <StatusOnText orderStatus={parcel.status} />
-        </p>
+        </div>
         <p className="data-label">Estimated time of arrival</p>
         <Date dateString={parcel.eta} />
         <p className="data-label">Parcel ID</p>

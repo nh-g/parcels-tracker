@@ -9,7 +9,6 @@ import ParcelCard from "../components/parcels/ParcelCard";
 export default function Parcel({ match }) {
   // Global state
   const parcels = useRecoilValue(parcelState);
-
   // Constants
   const routerID = match.params.id;
   const matchedParcel = parcels.find((item) => item.parcel_id === routerID);
@@ -18,9 +17,7 @@ export default function Parcel({ match }) {
     return (
       <div>
         <br />
-        <h2>    Not Found. 
-          <br/>
-          ⬅ Browser back to the list of all parcels.</h2>
+        <h2> Not Found. </h2>⬅ Browser back to the list of all parcels.
       </div>
     );
   }
