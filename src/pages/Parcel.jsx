@@ -19,11 +19,11 @@ export default function Parcel({ match }) {
   }
   return (
     <div id="parcel" className="container">
-      <h1>Parcel details</h1>
       <div className="parcel-details">
         <ParcelCard key={matchedParcel.id} parcel={matchedParcel} />
       </div>
-      <Link className="back-to-list" to="/home">
+      <br/>
+      <Link className="back-to-list" to="/">
         ⬅ Back to all parcels
       </Link>
     </div>
