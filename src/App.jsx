@@ -7,9 +7,11 @@ import Home from './pages/Home';
 import SearchResult from './pages/SearchResult';
 // import Parcel from './pages/Parcel'
 
+import "./styles/shared.scss";
+
 export default function App() {
 return (
-  <Container>
+  // <Container>
     <Router>
       <div className="App">
         <RecoilRoot>
@@ -24,6 +26,6 @@ return (
         </RecoilRoot>
       </div>
     </Router>
-  </Container>
+  // </Container>
 );
 }
