@@ -4,7 +4,12 @@ A simple web app that displays a list of orders (or parcels) with some details t
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and supports major mobile and desktop browsers/layouts.
 
-## Available Scripts
+## How to Start - Available Scripts
+
+Firstly start by downloading zip or cloning this repository.
+```
+https://github.com/nh-g/parcels-tracker.git
+```
 
 In the project directory, you can run:
 ```
@@ -15,18 +20,20 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+<br/>
 
-```
-yarn build
-```
+## Consideration for further scale
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Due to 5 hour time limit requirement of the assignment, there are several user experience steps was considered to be skipped(.i.e login authentication).<br/>
+The style is thus kept very simple and minimalism so that the design can be easily adapted if being added to other projects.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In the future, I plan to add some functions like:
+<li> view interactive map of parcels; using React Google Map API</li>
+<li> display last update in form of time ago; using React Time Ago API </li>
+<li> users can choose to sort parcels by eta or order status</li>
+<li> switching language interface</li>
+<li> manually add parcel to track</li>
+<br/>
 
 ## Dependencies
 
@@ -49,6 +56,8 @@ The app makes use of these packages:
 <li>@fortawesome/free-regular-svg-icons</li>
 <li>@fortawesome/free-solid-svg-icons</li>
 <li>@fortawesome/react-fontawesome</li>
-    
+<br/>
 
+### Testings 
+react-testing-library
 
