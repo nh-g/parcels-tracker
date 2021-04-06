@@ -11,8 +11,10 @@ export default function SearchResult({ match }) {
 
   // Constants
   const query = match.params.query.toUpperCase();
-  const filteredResults = parcels.filter((item) =>
-    item.sender.toUpperCase().match(query)
+  const filteredResults = parcels.filter(
+    (item) =>
+      item.sender.toUpperCase().match(query) ||
+      item.parcel_id.toUpperCase().match(query)
   );
   const FilteredOrderArray = filteredResults.map((item) => (
     <ParcelItem key={item.id} parcel={item} />

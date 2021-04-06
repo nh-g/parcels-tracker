@@ -34,7 +34,7 @@ export default function SearchBar() {
         <input
           type="text"
           id="sender-search"
-          placeholder="🔍   Put name of sender then hit Enter"
+          placeholder="🔍   put sender or parcel id then hit Enter"
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           className="search-box"
