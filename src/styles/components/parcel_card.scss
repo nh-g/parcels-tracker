@@ -6,8 +6,7 @@
         padding-left: 20px;
         padding-top: 20px;
         padding-bottom: 30px;
-            background-color: white;
-
+        background-color: white;
     }
 }
 
@@ -22,16 +21,19 @@
 .data-label {
     font-size: var(--font-size-medium);
     margin-bottom: 0px;
-    color: var(--color-black);
+    font-weight: 300px;
+    color: rgb(204, 204, 204);
 }
 
 .data-content {
-    font-size: var(--font-size-medium-big);
-    font-weight: 500;
+    font-size: var(--font-size-medium);
+    font-weight: 400;
     margin-top: var(--space-small);
     margin-bottom: var(--space-big);
-    color: var(--color-blue);
+    color: var(--color-black);
     letter-spacing: 1.3px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f1f3f7;
 
 }
 
