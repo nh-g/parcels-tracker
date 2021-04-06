@@ -8,7 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Firstly start by downloading zip or cloning this repository.
 ```
-https://github.com/nh-g/parcels-tracker.git
+git clone https://github.com/nh-g/parcels-tracker.git
 ```
 
 In the project directory, you can run:
