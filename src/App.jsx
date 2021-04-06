@@ -3,7 +3,8 @@ import { Container } from "semantic-ui-react";
 import { RecoilRoot } from "recoil";
 
 import Header from './components/Header';
-import Home from './pages/Home';
+// import Home from './pages/Home';
+import ParcelList from './pages/ParcelList'
 import SearchResult from './pages/SearchResult';
 import Parcel from './pages/Parcel'
 
@@ -17,11 +18,9 @@ return (
         <RecoilRoot>
           <Header />
           <Switch>
-            <Route component={Home} path="/" exact />
+            <Route component={ParcelList} path="/" exact />
             <Route path="/search_results/:query" component={SearchResult} />
-
             <Route path="/parcel/:id" exact component={Parcel} />
-            {/* <Route component={ParcelCard} path="/parcel" />*/}
           </Switch>
         </RecoilRoot>
       </div>

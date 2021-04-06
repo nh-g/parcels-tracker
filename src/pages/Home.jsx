@@ -1,10 +1,10 @@
-import ParcelList from "../components/parcels/ParcelList"
+// import ParcelList from "../components/parcels/ParcelList"
 
-export default function Home(){
-    return (
-    <div className = "home container"> 
-        <ParcelList />
-    </div>
+// export default function Home(){
+//     return (
+//     <div className = "home container"> 
+//         <ParcelList />
+//     </div>
 
-    )
-}
+//     )
+// }

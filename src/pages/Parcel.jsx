@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useRecoilValue } from "recoil";
 
 // Project files
-import { parcelState } from "../components/state/parcelState";
+import { parcelState } from "../state/parcelState";
 import ParcelCard from "../components/parcels/ParcelCard";
 
 export default function Parcel({ match }) {

@@ -2,7 +2,7 @@
 import { useRecoilValue } from "recoil";
 
 // Project files
-import { parcelState } from "../components/state/parcelState";
+import { parcelState } from "../state/parcelState";
 import ParcelItem from "../components/parcels/ParcelItem";
 
 export default function SearchResult({ match }) {

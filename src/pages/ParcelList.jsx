@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
 
-import FetchData from "../FetchData";
-import ParcelItem from "./ParcelItem";
+import FetchData from "../components/FetchData";
+import ParcelItem from "../components/parcels/ParcelItem";
 import { parcelState } from "../state/parcelState";
 
 export default function ParcelList() {
