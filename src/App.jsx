@@ -7,7 +7,7 @@ import ParcelList from './pages/ParcelList'
 import SearchResult from './pages/SearchResult';
 import Parcel from './pages/Parcel'
 
-import './styles/shared.scss';
+import './styles/shared.sass';
 import Footer from "./components/Footer";
 
 export default function App() {
