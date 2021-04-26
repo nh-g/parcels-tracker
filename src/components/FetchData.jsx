@@ -1,4 +1,5 @@
 import axios from "axios";
+
 export default function FetchData (url) {
   return new Promise((resolve, reject) => {
     axios

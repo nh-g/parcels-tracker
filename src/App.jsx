@@ -3,14 +3,12 @@ import { RecoilRoot } from "recoil";
 
 import Header from './components/Header';
 // import Home from './pages/Home';
-import ListParcels from './pages/ListParcels'
+import ParcelList from './pages/ParcelList'
 import SearchResult from './pages/SearchResult';
 import Parcel from './pages/Parcel'
 
 import './styles/shared.sass';
 import Footer from "./components/Footer";
-import DataFetched from "./components/parcels/DataFetched";
-import ListOfParcels from './pages/ListParcels'
 
 export default function App() {
 return (
@@ -19,7 +17,7 @@ return (
         <RecoilRoot>
           <Header />
           <Switch>
-            <Route component={DataFetched} path="/" exact />
+            <Route component={ParcelList} path="/" exact />
             <Route path="/search_results/:query" component={SearchResult} />
             <Route path="/parcel/:id" exact component={Parcel} />
           </Switch>
