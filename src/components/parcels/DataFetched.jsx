@@ -1,24 +1,12 @@
 import React, { useEffect, useState } from "react";
-
 import { parcelState } from "../../state/parcelState";
 
 import FetchData from "../FetchData";
 import ListParcels from "../../pages/ListParcels"
-
-import { useRecoilState } from "recoil";
-
-import FetchData from "../components/FetchData";
-import ParcelItem from "../components/parcels/ParcelItem";
-import { parcelState } from "../state/parcelState";
-
-export default function ParcelList() {
-  const [parcels, setParcels] = useRecoilState(parcelState);
+export default function DataFetched() {
+  const [parcels, setParcels] = useState(parcelState);
   const [load, setLoad] = useState(false);
   const [error, setError] = useState("");
-
-  const ParcelsArray = parcels.map((item) => (
-    <ParcelItem key={item.id} parcel={item} />
-  ));
 
   let count = 0;
   useEffect(() => {
@@ -37,11 +25,11 @@ export default function ParcelList() {
   if (load) {
     return (
       <ul className="parcel-grid">
-        <h1> Your Parcels </h1>{" "}
-        {error ? <li> {error.message} </li> : ParcelsArray}
+        {/* {error ? <li> {error.message} </li> : ParcelsArray} */}
+        {error ? <li> {error.message} </li> : <ListParcels parcels = {parcels} />}
       </ul>
     );
   } else {
-    return <div> Loading... </div>;
+    return <div> Loading your parcels... </div>;
   }
 }
