@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { useRecoilState } from "recoil";
 import { parcelState } from "../../state/parcelState";
 
 import FetchData from "../FetchData";
 import ListParcels from "../../pages/ListParcels"
 export default function DataFetched() {
-  const [parcels, setParcels] = useState(parcelState);
+  const [parcels, setParcels] = useRecoilState(parcelState);
   const [load, setLoad] = useState(false);
   const [error, setError] = useState("");
 
