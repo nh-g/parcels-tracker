@@ -1,11 +1,5 @@
-import React, { useEffect, useState } from "react";
-
-import { parcelState } from "../../state/parcelState";
-
-import FetchData from "../FetchData";
-import ListParcels from "../../pages/ListParcels"
-
 import { useRecoilState } from "recoil";
+import React, { useEffect, useState } from "react";
 
 import FetchData from "../components/FetchData";
 import ParcelItem from "../components/parcels/ParcelItem";
